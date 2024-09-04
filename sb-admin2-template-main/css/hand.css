@@ -1,0 +1,314 @@
+#lwzt.search-bar {
+    width:700px;
+    color:#3b5998;
+    border-radius:10px;
+    margin-left:3px;
+  
+  }
+  #lwzt.icon {
+    width: 50px;
+    color:#1c294e;
+    text-align: center;
+  }
+  #lwzt.code-flow span {
+    display: inline-block;
+    transform: translateY(100%);
+    animation: codeFlow 2s infinite linear;
+}
+
+@keyframes  codeFlow {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    25%, 75% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../../Myanmar-Unicode-Fonts-master/MyanmarBlack/MyanmarBlack.ttf') format('woff2'); /* Modern Browsers */
+      
+  font-weight: normal;
+  font-style: normal;
+}
+
+#lwzt .sign2 {
+    width: 100%;
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  #lwzt .sign2::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  
+  #lwzt .sign2 h2{
+    font-size: 20px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-family: "MyCustomFont";
+    
+  }
+  @media (max-width:450px) {
+    #lwzt.sign  h2{
+      font-size: 20px;
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      color: black;
+    }
+  }
+  #lwzt .sign2 h3{
+    font-size: 20px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+    
+    
+  }
+  #lwzt.code-flow span {
+    display: inline-block;
+    transform: translateY(100%);
+    animation: codeFlow 2s infinite linear;
+}
+
+@keyframes codeFlow {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    25%, 75% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+ 
+@media ( max-width:400px){
+  #lwzt #sidebarToggleTop{
+    position: absolute;
+   top: 18px;
+   right: 100px;
+  }
+  #lwzt #phone{
+    margin-left: -300px;
+  }
+}@media ( max-width:760px){
+  #lwzt #overflow{
+    overflow: auto;
+    width: 200px;
+    
+  }
+  #lwzt #sidebarToggleTop{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+  }
+}
+
+
+ 
+
+  
+#lwzt.sign2 {
+    margin: 20px;
+    padding: 20px;
+    /* border: 2px solid #ddd; */
+    max-width: 100%;
+    height: auto;
+    margin: 0 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    
+  }
+  
+  
+  #lwzt .sign2 h3{
+    font-size: 20px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #lwzt.sign2 .box-container{
+  
+    display: grid;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 3px;
+    margin-right:5px;
+    
+  
+  }
+  
+  #lwzt.sign2 .box-container .box{
+   
+   
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    border: 1px solid #c3c2c2;
+    background-color: #4f1915;
+    
+   
+  }
+  
+  #lwzt.sign2 .box-container .box:hover{
+    transform: scale(1.03);
+    background-color: #ededed;
+  }
+  
+  #lwzt.sign2 .box-container .box .thumb{
+    width: 80px;
+    height:80px;
+    margin-bottom: .3rem;
+    display: flex;
+  }
+  
+  #lwzt.sign2 .box-container .box .title1{
+    font-size: 20px;
+    color: black;
+    margin-top: .5rem;
+    padding: .2rem 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+  }
+  
+  
+  #lwzt.sign2 .box-container .box p{
+    border: none;
+    font-size: 1rem;
+    color: black;
+    margin-top: .5rem;
+    padding: .2rem 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+  }
+  
+  
+  
+  #lwzt.sign2 .container-fluid .container-but{
+    margin-top: 25px;
+  }
+  
+  #lwzt.sign2 .container-but > a > button{
+    font-size: 20px;
+    color: #fff;
+    background-color: #4f1915;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  
+  /* main */
+  
+  #lwzt.sign2 .container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  
+    color: #000;
+  }
+  
+  #lwzt.sign2 .container-fluid .leader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  
+    color: #000;
+    
+    text-align: center;
+  }
+  
+  #lwzt .sign2 .container-fluid .leade > h5{
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* fruit */
+  
+  
+  #lwzt.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* flex-direction: column;  */
+    flex-wrap: wrap;
+  
+    color: #000;
+  }
+  
+  #lwzt.sign2 .container-fluid .fruit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* flex-direction: column;  */
+    flex-wrap: wrap;
+  
+    color: #000;
+    
+    text-align: center;
+  }
+  
+  #lwzt.container-fluid .fruit > h5{
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
+  
+  #lwzt.container-fluid .bbfruit{
+    margin-top: 10rem;
+  }
+  
+  #lwzt .bbfruit >a>button{
+    font-size: 20px;
+    /* color: #fff; */
+    background-color: #4f1915;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+    margin-left:10rem;
+    margin-right: 10rem;
+  
+  }
+  
+  

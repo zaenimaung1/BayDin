@@ -1,0 +1,548 @@
+
+.sidebar{
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+body{
+  width: 100%;
+  height: 100vh;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+#content-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* input bd style css*/
+#birthdate {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#birthdate:hover {
+  border-color: #009999;
+  box-shadow: 0 4px 10px rgba(0, 153, 153, 0.3);
+}
+
+#birthdate:focus {
+  border-color: #006666;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 102, 102, 0.5);
+}
+/* bd button css */
+.khalote{
+  background: linear-gradient(to bottom, #005ab4 0%, #009999 100%);
+  width: 100px;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+.khalote:hover{
+  filter: brightness(120%); 
+}
+
+#content {
+  flex: 1;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+}
+
+.hidden {
+display: none;
+}
+
+/* corner image css */
+@media (max-width:450px) {
+  .corner-img {
+    display: none;
+  }
+ 
+}
+.corner-img {
+  position: absolute;
+  width: 200px; 
+  height: 200px;
+}
+
+.bottom-left {
+  bottom: -20px;
+  left: 180px;
+  transform: rotate(0deg);
+}
+
+.top-right {
+  top: -50px;
+  right: -20px;
+  transform: rotate(180deg);
+}
+
+.top-left {
+  top: -50px;
+  left: 180px;
+  transform: rotate(90deg); 
+}
+
+.bottom-right {
+  bottom: -20px;
+  right: -0px;
+  transform: rotate(-90deg);
+}
+/* inner scoll bar hidden css */
+  .sign {
+    
+    padding: 50px;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+  
+  .sign::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .sign h2{
+    font-size: 18px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "MyCustomFont";
+    
+  }
+  @media (max-width:450px) {
+    .sign  h2{
+      font-size: 20px;
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      color: white;
+    }
+    #sidebarToggleTop{
+      position: absolute;
+     top: 18px;
+     right: 100px;
+    }
+    #phone{
+      margin-left: -300px;
+    }
+    .content  {
+      display: inline-block;
+  }
+  .content .element-image{
+    width: 20;
+    height: 20%;
+    margin-bottom: 20px;
+  }
+ 
+  .content .zodiac-title{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    
+  }
+  }
+  .sign h3{
+    font-size: 20px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+    
+    
+  }
+  /* logo animation css */
+  .code-flow span {
+    display: inline-block;
+    transform: translateY(100%);
+    animation: codeFlow 2s infinite linear;
+}
+
+@keyframes codeFlow {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    25%, 75% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@media ( max-width:760px){
+  #overflow{
+    overflow: auto;
+    width: 200px;
+    
+  }
+  #sidebarToggleTop{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+  }
+/* box animation css */
+}
+.box {
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.box:hover .thumb {
+  transform: scale(1.1) rotate(5deg); 
+}
+
+.box:hover .text {
+  transform: translateY(-10px);
+}
+
+.thumb {
+  width: 100px; 
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.title1 {
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.box:hover .title1 {
+  color: #007bff; 
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.box:hover p {
+  color: #555; 
+}
+/* box animation end */
+
+#icon{
+  color: white;
+}
+.sign .box-container{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sign .box-container .box{
+  border-radius: 30px 0 30px 0;
+  padding: 1rem;
+  background-color: transparent;
+  gap: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+
+
+.sign .box-container .box .thumb{
+  width: 80px;
+  height:80px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.sign .box-container .box .title1{
+  font-size: 18px;
+  color: black;
+  margin-top: .5rem;
+  padding: .2rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0; */
+}
+
+
+.sign .box-container .box p{
+  border: none;
+  font-size: 16px;
+  color: black;
+  margin-top: .5rem;
+  padding: .2rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+ 
+  .see-more-content {
+    display: none;
+
+  } 
+  .content2 a{
+    text-decoration: none;
+  }
+  
+  .content2 p{
+    font-size: 17px;
+    text-align: justify;
+  }
+  .content{
+    display: flex; 
+    
+  }
+  .nav-item{
+    cursor: pointer;
+    gap: 1px;
+    transition: filter 0.3s;
+    
+  }
+
+  .nav-item:hover {
+    filter: brightness(120%); 
+  }
+  .nav-link span {
+    display: inline-block;
+    transition: transform 0.3s, opacity 0.3s; 
+}
+
+.nav-item:hover .nav-link span {
+    animation: codeFlow 5s forwards; 
+}
+
+@keyframes codeFlow {
+    0% {
+        transform: translateY(100%) scale(1.5); 
+    }
+    50% {
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%) scale(1.5); 
+    }
+}
+
+  .content .element-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 28.33%;
+    height: 28.33%;
+    margin-left: 5%;
+    background-color:none;
+  }
+  .content .element-image img{
+    max-width: 65%;
+    max-height: 65%;
+    object-fit: cover;
+    padding: 5%;
+  }
+  .content .zodiac-title{
+    width: 56.67%;
+    height: 56.67%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* for the answer page of zodiac*/
+  .z-answer{
+    display: flex;
+  }
+.lion-pic{
+  margin-left: 50px;
+  margin-top: -20px;
+  width: 220px;
+  height: 320px ;
+  display: block;
+  position: relative;
+}
+
+.for-corner {
+  position: relative;
+  display: inline-block;
+}
+
+
+.corner-img1 {
+  position: absolute;
+  width: 100px;  
+  height: 100px; 
+  z-index: 10;  
+}
+
+.t-l {
+  top: -70px;
+  left: -5px;
+  transform: rotate(0deg); /* No rotation */
+}
+
+.t-r {
+  top: -70px;
+  right: -53px;
+  transform: rotate(90deg); /* 90 degrees to fit the top-right corner */
+}
+
+.b-l {
+  bottom: 20px;
+  left: -5px;
+  transform: rotate(270deg); /* 270 degrees to fit the bottom-left corner */
+}
+
+.b-r {
+  bottom: 20px;
+  right: -53px;
+  transform: rotate(180deg); /* 180 degrees to fit the bottom-right corner */
+}
+@media (max-width:450px) {
+  .corner-img {
+    display: none;
+  }
+  
+}
+.five-step{
+  
+  border: 1px solid #ccc;
+  width: 650px;
+  height: auto;
+  margin-left: 150px;
+  padding: 20px;
+  border-radius: 30px;
+  
+
+  
+}
+.container-custom {
+  padding: 10px;
+  
+}
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.content-box {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  
+}
+.content-box h4{
+  font-size: 20px;
+  color: black;
+}
+/* progress bar css */
+.traits-container {
+  margin: 20px;
+}
+
+.trait {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.trait span{
+  width: 200px;
+}
+.trait-name {
+  margin-right: 10px;
+  font-weight: bold;
+ 
+}
+
+.progress-bar {
+  
+  flex: 1;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 10px;
+}
+
+.progress {
+  height: 100%;
+  width: 0; /* Start with 0 width for animation */
+  background: linear-gradient(to bottom, #003366 0%, #009999 100%);
+  border-radius: 10px;
+  transition: width 1s ease-in-out; /* Smooth transition for width */
+}
+
+.percentage {
+  font-weight: bold;
+  min-width: 50px; /* Ensures the text is centered */
+  text-align: center;
+}
+
+.content2 p{
+  border: none;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Apply the animation to the content */
+.content-box {
+  opacity: 0; /* Hide content by default */
+  animation: fadeIn 4s forwards; /* Apply animation */
+}
+
+
+
+
+
+

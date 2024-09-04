@@ -1,0 +1,423 @@
+.code-flow span {
+    display: inline-block;
+    transform: translateY(100%);
+    animation: codeFlow 2s infinite linear;
+}
+
+@keyframes codeFlow {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    25%, 75% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+.sign2 h2{
+    font-size: 20px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-family: "MyCustomFont";
+  }
+#icon{
+    color: white;
+  }
+  .sign2 .box-container{
+    
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 0.5rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .card {
+    text-decoration: none;
+  }
+  .custom-link {
+    color: black;
+    text-decoration: none;
+    
+}
+.sign2 .box {
+    width: 260px;
+    cursor: pointer;
+}
+.custom-link:hover {
+    color: black;
+    text-decoration: none;
+    
+}
+.sign2 .box {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.collapse-content {
+    background-color: none;
+    color: black
+}
+
+  .sign2 .box-container .box{
+    border-radius: 30px 30px 30px 30px;
+   
+    border: 1px solid #c3c2c2;
+    cursor: pointer;
+  }
+  
+  .sign2 .box-container .box:hover{
+  
+    box-shadow: rgba(0, 0, 0, 0.2);
+  }
+  #no{
+    width: 80%;
+    height: 80px;
+    text-decoration: none;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 10px;
+  }
+  #no p {
+    font-size :18px; ;
+  }
+  .sign2 .box-container .card{
+    background-color:transparent;
+    
+    border: none;
+  }
+ 
+  .sign2 .box-container .box .thumb{
+    width: 80px;
+    height:80px;
+    margin-bottom: .3rem;
+    display: flex;
+  }
+  
+  .sign2 .box-container .box .title1{
+    font-size: 20px;
+    color: black;
+    margin-top: .5rem;
+    padding: .2rem 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+  }
+
+  
+  .sign2 .box-container .box p{
+    border: none;
+    font-size: 1rem;
+    color: black;
+    margin-top: .5rem;
+    padding: .2rem 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+  }
+  /* frame twy ko d ka sa FILL */
+  
+
+  @font-face {
+    font-family: 'MyCustomFont';
+    src: url('../../Myanmar-Unicode-Fonts-master/MyanmarBlack/MyanmarBlack.ttf') format('woff2'); /* Modern Browsers */
+        
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+    .sign2 {
+      width: 100%;
+      -ms-overflow-style: none; /* Internet Explorer and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    
+    .sign2::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+    
+    .sign2 h2{
+      font-size: 20px;
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+      color: black;
+      
+    }
+    @media (max-width:450px) {
+      .sign1  h2{
+        font-size: 20px;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        color: black;
+      }
+    }
+    .sign2 h3{
+      font-size: 20px;
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+  
+      
+      
+    }
+    .code-flow span {
+      display: inline-block;
+      transform: translateY(100%);
+      animation: codeFlow 2s infinite linear;
+  }
+  
+  @keyframes codeFlow {
+      0% {
+          transform: translateY(100%);
+          opacity: 0;
+      }
+      25%, 75% {
+          transform: translateY(0%);
+          opacity: 1;
+      }
+      100% {
+          transform: translateY(-100%);
+          opacity: 0;
+      }
+  }
+   
+  @media ( max-width:400px){
+    #sidebarToggleTop{
+      position: absolute;
+     top: 18px;
+     right: 100px;
+    }
+    #phone{
+      margin-left: -300px;
+    }
+  }@media ( max-width:760px){
+    #overflow{
+      overflow: auto;
+      width: 200px;
+      
+    }
+    #sidebarToggleTop{
+      position: absolute;
+      top: 18px;
+      right: 20px;
+    }
+    
+  }
+  
+  
+   
+   
+    
+    .choice {
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        height: auto;
+        margin: 0 2rem;
+        margin-bottom: 3rem;
+      }
+      
+      .choice img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .birth {
+        display: block;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      
+      #birthdate {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.3rem;
+      }
+      
+      .btn1 {
+        margin-top: 10px;
+        padding: 5px 20px;
+        background-color: #ff6f61;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.3rem;
+      }
+      
+      .btn:hover {
+        background-color: #ef4738;
+      }
+      
+    #zodiacResult {
+        font-size: 1.3rem;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    #zodiac-sign-details {
+        margin: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        height: auto;
+        margin: 0 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    
+    
+    .form-group img {
+      border-radius: 10rem;
+      padding: .5rem 0;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .form-group .main{
+      width: auto;
+      height: 20rem;
+      border: none;
+    }
+    
+    
+    .header {
+      background-color: #ff6f61;  
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: .5rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    
+    .header .myanmar{
+      border: none;
+    }
+    
+    .form-group {
+      background-color: #fff;
+      padding: 20px;
+      border: 2px solid #ff6f61;
+      border-radius: .5rem;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .form-group .circle{
+      background-color: #ccc;
+      padding: 1rem 1rem;
+      border-radius: 50%;
+      box-shadow: 5px 5px 5px #ccc;
+    
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      
+      margin: 10px auto; 
+    }
+    
+    
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      margin: 10px 0;
+      line-height: 2rem;
+      text-align: center;
+      border: 1px solid black;
+    }
+    
+    .personality h3{
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      
+    }
+    
+    .trait-container {
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+    
+    .trait {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .trait-name {
+      width: 150px;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    
+    .progress-bar {
+      width: 250px;
+      height: 10px;
+      background-color: #e1e1e1;
+      border-radius: 10px;
+      position: relative;
+    }
+    
+    .progress {
+      height: 100%;
+      background-color: #ff6f61;
+      border-radius: 10px;
+    }
+    
+    .percentage {
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    
+    
+    .trait .progress-bar:hover .progress {
+      background-color: #ef4738; 
+      transition: width 0.3s;
+    }
+    

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/zodiac.css">
+    <link rel="stylesheet" href="css/skin.css">
+    <link rel="stylesheet" href="css/hand.css">
+    <link rel="stylesheet" href="css/year.css">
+    
+    
+
+
+</head>
+
+<body id="page-top">
+    <img src="../zodiac icons/https___www.pngguru.in_storage_uploads_images_Golden Corner design png stock image_1649063145_866209242.png" class="corner-img top-left" alt="Top Left Corner">
+    <img src="../zodiac icons/https___www.pngguru.in_storage_uploads_images_Golden Corner design png stock image_1649063145_866209242.png" class="corner-img top-right" alt="Top Right Corner">
+    <img src="../zodiac icons/https___www.pngguru.in_storage_uploads_images_Golden Corner design png stock image_1649063145_866209242.png" class="corner-img bottom-left" alt="Bottom Left Corner">
+    <img src="../zodiac icons/https___www.pngguru.in_storage_uploads_images_Golden Corner design png stock image_1649063145_866209242.png" class="corner-img bottom-right" alt="Bottom Right Corner">
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.container-fluid');
+    const topLeft = document.querySelector('.top-left');
+    const topRight = document.querySelector('.top-right');
+    const bottomLeft = document.querySelector('.bottom-left');
+    const bottomRight = document.querySelector('.bottom-right');
+
+    container.addEventListener('scroll', () => {
+        const scrollY = container.scrollTop;
+
+        // Show/hide top images based on scroll position
+        if (scrollY > 100) {
+            topLeft.classList.add('hidden');
+            topRight.classList.add('hidden');
+            bottomLeft.classList.remove('hidden');
+            bottomRight.classList.remove('hidden');
+        } else {
+            topLeft.classList.remove('hidden');
+            topRight.classList.remove('hidden');
+            bottomLeft.classList.add('hidden');
+            bottomRight.classList.add('hidden');
+        }
+    });
+});
+
+    </script>
+    <!-- Page Wrapper -->
+    <div id="wrapper" style="height: 100vh;">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav  sidebar sidebar-dark accordion" id="accordionSidebar" style="background: linear-gradient(to bottom, #003366 0%, #009999 100%); border-left-color: white;">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                
+                <div class="sidebar-brand-text mx-3">
+                    
+                    <div class="code-flow">
+                        <img src="../zodiac icons/parchment.png" alt="" style="width: 50px; height: 50px;"  >&nbsp;
+                        <span>ရိုး</span>
+                        <span>ရာ</span>
+                        <span>ဗေ</span>
+                        <span>ဒင်</span>
+                        
+                    </div>
+                </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0" >
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active" >
+                <a class="nav-link" href="hand-index.html">
+                    <img src="../zodiac icons/icons8-finger-48 (1).png" style="width: 20px; " alt=""> &nbsp;
+                    <span>လက်ထောက်ဗေဒင်</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="pickindex.html">
+                    <img src="../zodiac icons/icons8-poker-50.png" style="width: 20px; " alt=""> &nbsp;
+                    <span>Pick a pile</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="zodiac.html">
+                    <img src="../zodiac icons/icons8-virgo-50.png" style="width: 20px; " alt=""> &nbsp;
+                    <span>၁၂လ ရာသီခွင်</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="dreamindex.html">
+                    <img src="../zodiac icons/icons8-thought-balloon-48.png" style="width: 20px; " alt=""> &nbsp;
+                    <span>အိပ်မက် အဘိဓာန်</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="skin.html">
+                    <img src="../zodiac icons/icons8-body-51.png" style="width: 20px; " alt=""> &nbsp;
+                    <span>အသားလှုပ် နိမိတ်</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <img src="../zodiac icons/icons8-lizard-48.png" style="width: 20px; " alt=""> &nbsp;
+                    <span>အိမ်မြှောင်စုပ်ထိုး နိမိတ်</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <img src="../zodiac icons/icons8-bee-50.png" style="width: 20px; " alt=""> &nbsp;
+                    <span>ပျားစွဲ နိမိတ်</span>
+                </a>
+            </li>
+            <li class="nav-item  pb-5" >
+                <a class="nav-link" href="year.html">
+                    <img src="../zodiac icons/icons8-crystal-ball-64.png" style="width: 20px; " alt=""> &nbsp;
+                    <span>တနှစ်စာဟောတမ်း</span>
+                </a>
+            </li>
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content" style="background-color: #f2f2f2;" class="pb-5">
+                <div class="p-4 d-block d-md-none" style="height: 70px; background-color: #1E1F26;">
+                    <button id="sidebarToggleTop" style="padding: 5px 10px; border-radius: 5px; border: none;">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                
+                
+                <!-- Topbar -->
+                <section  class="sign container-fluid" style="height: 100vh; overflow-y: scroll; overflow-x: hidden; padding: 50px;" >
+                   
+                    <h2 style="color: black;" class="pt-3">အသားလှုပ်ခြင်းဆိုင်ရာ နိမိတ်လက္ခဏာများ</h2>
+                   
+                    <div class="container mt-5">
+                
+                        <div class="question-container">
+                            <div id="foreheadShakeDiv" class="question-div">If your forehead shakes</div>
+                            <div id="eyeTwitchDiv" class="question-div">If your eye twitches</div>
+                            <div id="lipTrembleDiv" class="question-div">If your lip trembles</div>
+                            <div id="handShakeDiv" class="question-div">If your hand shakes</div>
+                            <div id="legTwitchDiv" class="question-div">If your leg twitches</div>
+                            <div id="earItchDiv" class="question-div">If your ear itches</div>
+                            <div id="noseTwitchDiv" class="question-div">If your nose twitches</div>
+                            <div id="chinTrembleDiv" class="question-div">If your chin trembles</div>
+                            <div id="shoulderShakeDiv" class="question-div">If your shoulder shakes</div>
+                        </div>
+                    </div>
+                
+                    <script>
+                        document.getElementById('foreheadShakeDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Forehead Shakes',
+                                text: 'This is the result for if your forehead shakes.',
+                                imageUrl: '../zodiac icons/wrinkle (2).png', // Replace with your image URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        document.getElementById('eyeTwitchDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Eye Twitches',
+                                text: 'This is the result for if your eye twitches.',
+                                imageUrl: '../zodiac icons/witness.png', // Replace with your eye logo URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        document.getElementById('lipTrembleDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Lip Trembles',
+                                text: 'This is the result for if your lip trembles.',
+                                imageUrl: '../zodiac icons/lips.png', // Replace with your image URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        document.getElementById('handShakeDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Hand Shakes',
+                                text: 'This is the result for if your hand shakes.',
+                                imageUrl:'../zodiac icons/hello.png', // Replace with your image URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        document.getElementById('legTwitchDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Leg Twitches',
+                                text: 'This is the result for if your leg twitches.',
+                                imageUrl: '../zodiac icons/leg.png', // Replace with your image URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        document.getElementById('earItchDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Ear Itches',
+                                text: 'This is the result for if your ear itches.',
+                                imageUrl: '../zodiac icons/deaf.png', // Replace with your image URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        document.getElementById('noseTwitchDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Nose Twitches',
+                                text: 'This is the result for if your nose twitches.',
+                                imageUrl:'../zodiac icons/nose.png', // Replace with your image URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        document.getElementById('chinTrembleDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Chin Trembles',
+                                text: 'This is the result for if your chin trembles.',
+                                imageUrl:'../zodiac icons/mentoplasty.png', // Replace with your image URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        document.getElementById('shoulderShakeDiv').addEventListener('click', function() {
+                            Swal.fire({
+                                title: 'Shoulder Shakes',
+                                text: 'This is the result for if your shoulder shakes.',
+                                imageUrl: '../zodiac icons/shoulder.png', // Replace with your image URL
+                                imageWidth: 100,
+                                imageHeight: 100,
+                                confirmButtonText: 'OK'
+                            });
+                        });
+                
+                        // Add more event listeners for additional divs
+                    </script>
+                    </section>
+                <!-- End of Topbar -->
+                
+                  
+                       
+                    
+                
+                <script>
+                    var boxes = document.querySelectorAll(".box");
+
+                boxes.forEach(function(box) {
+                box.addEventListener("click", function() {
+                var url = this.getAttribute("data-url");
+                window.location.href = "zodiac_ans.html";
+                    });
+                });
+
+                </script>
+                <!-- Begin Page Content -->
+                
+                   
+            <!-- End of Main Content -->
+            
+
+        </div>
+        <!-- End of Content Wrapper -->
+        </div>
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+ 
+
+    <!-- Logout Modal-->
+   
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    
+
+   
+
+</body>
+
+</html>
